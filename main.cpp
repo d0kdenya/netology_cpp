@@ -1,25 +1,37 @@
 #include <iostream>
+#include <string>
 
-// TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+struct Address {
+    std::string city;
+    std::string street;
+    int house;
+    int apartment;
+    int zip;
+};
+
+void printAddress(const Address& addr) {
+    std::cout << "Город: "        << addr.city      << '\n'
+              << "Улица: "        << addr.street    << '\n'
+              << "Номер дома: "   << addr.house     << '\n'
+              << "Номер квартиры: "<< addr.apartment << '\n'
+              << "Индекс: "       << addr.zip       << "\n";
+}
+
 int main() {
-    // TIP Press <shortcut actionId="RenameElement"/> when your caret is at the
-    // <b>lang</b> variable name to see how CLion can help you rename it.
-    auto lang = "C++";
-    std::cout << "Hello and welcome to " << lang << "!\n";
+    system("chcp 65001 > nul");
 
-    for (int i = 1; i <= 5; i++) {
-        // TIP Press <shortcut actionId="Debug"/> to start debugging your code.
-        // We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/>
-        // breakpoint for you, but you can always add more by pressing
-        // <shortcut actionId="ToggleLineBreakpoint"/>.
-        std::cout << "i = " << i << std::endl;
-    }
+    Address a1;
+    a1.city      = "Москва";
+    a1.street    = "Арбат";
+    a1.house     = 12;
+    a1.apartment = 8;
+    a1.zip       = 123456;
+
+    printAddress(a1);
+    std::cout << '\n';
+
+    Address a2{"Ижевск", "Пушкина", 59, 143, 953769};
+    printAddress(a2);
 
     return 0;
 }
-
-// TIP See CLion help at <a
-// href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
-//  Also, you can try interactive lessons for CLion by selecting
-//  'Help | Learn IDE Features' from the main menu.
