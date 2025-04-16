@@ -1,25 +1,53 @@
 #include <iostream>
 
-// TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+enum class Month {
+    January   = 1,
+    February  = 2,
+    March     = 3,
+    April     = 4,
+    May       = 5,
+    June      = 6,
+    July      = 7,
+    August    = 8,
+    September = 9,
+    October   = 10,
+    November  = 11,
+    December  = 12
+};
+
 int main() {
-    // TIP Press <shortcut actionId="RenameElement"/> when your caret is at the
-    // <b>lang</b> variable name to see how CLion can help you rename it.
-    auto lang = "C++";
-    std::cout << "Hello and welcome to " << lang << "!\n";
+    system("chcp 65001 > nul");
 
-    for (int i = 1; i <= 5; i++) {
-        // TIP Press <shortcut actionId="Debug"/> to start debugging your code.
-        // We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/>
-        // breakpoint for you, but you can always add more by pressing
-        // <shortcut actionId="ToggleLineBreakpoint"/>.
-        std::cout << "i = " << i << std::endl;
+    int m;
+    while (true) {
+        std::cout << "Введите номер месяца: ";
+        if (!(std::cin >> m)) {
+            std::cout << "До свидания\n";
+            break;
+        }
+
+        if (m == 0) {
+            std::cout << "До свидания\n";
+            break;
+        }
+
+        Month month = static_cast<Month>(m);
+        switch (month) {
+            case Month::January:   std::cout << "Январь\n";    break;
+            case Month::February:  std::cout << "Февраль\n";   break;
+            case Month::March:     std::cout << "Март\n";      break;
+            case Month::April:     std::cout << "Апрель\n";    break;
+            case Month::May:       std::cout << "Май\n";       break;
+            case Month::June:      std::cout << "Июнь\n";      break;
+            case Month::July:      std::cout << "Июль\n";      break;
+            case Month::August:    std::cout << "Август\n";    break;
+            case Month::September: std::cout << "Сентябрь\n";  break;
+            case Month::October:   std::cout << "Октябрь\n";   break;
+            case Month::November:  std::cout << "Ноябрь\n";    break;
+            case Month::December:  std::cout << "Декабрь\n";   break;
+            default:
+                std::cout << "Неправильный номер!\n";
+        }
     }
-
     return 0;
 }
-
-// TIP See CLion help at <a
-// href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
-//  Also, you can try interactive lessons for CLion by selecting
-//  'Help | Learn IDE Features' from the main menu.
