@@ -1,25 +1,79 @@
 #include <iostream>
+#include <string>
+#include <limits>
+#include <cstdlib>
 
-// TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+class Counter {
+private:
+    int value;
+
+public:
+    Counter() : value(1) {}
+
+    explicit Counter(int init) : value(init) {}
+
+    void increment() {
+        ++value;
+    }
+
+    void decrement() {
+        --value;
+    }
+
+    int getValue() const {
+        return value;
+    }
+};
+
 int main() {
-    // TIP Press <shortcut actionId="RenameElement"/> when your caret is at the
-    // <b>lang</b> variable name to see how CLion can help you rename it.
-    auto lang = "C++";
-    std::cout << "Hello and welcome to " << lang << "!\n";
+    system("chcp 65001 > nul");
 
-    for (int i = 1; i <= 5; i++) {
-        // TIP Press <shortcut actionId="Debug"/> to start debugging your code.
-        // We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/>
-        // breakpoint for you, but you can always add more by pressing
-        // <shortcut actionId="ToggleLineBreakpoint"/>.
-        std::cout << "i = " << i << std::endl;
+    std::cout << "Вы хотите указать начальное значение счётчика? Введите да или нет: ";
+    std::string answer;
+    std::getline(std::cin, answer);
+
+    for (auto &c : answer) c = static_cast<char>(std::tolower(c));
+
+    Counter counter;
+
+    if (answer == "да") {
+        int init;
+        while (true) {
+            std::cout << "Введите начальное значение счётчика: ";
+            if (!(std::cin >> init)) {
+                std::cin.clear();
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                std::cout << "Неверный ввод! Попробуйте ещё раз.\n";
+                continue;
+            }
+            break;
+        }
+        counter = Counter(init);
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    }
+
+    while (true) {
+        std::cout << "Введите команду ('+', '-', '=' или 'x'): ";
+        char cmd;
+        std::cin >> cmd;
+
+        switch (cmd) {
+            case '+':
+                counter.increment();
+                break;
+            case '-':
+                counter.decrement();
+                break;
+            case '=':
+                std::cout << counter.getValue() << "\n";
+                break;
+            case 'x':
+                std::cout << "До свидания!\n";
+                return 0;
+            default:
+                std::cout << "Неверная команда\n";
+        }
     }
 
     return 0;
 }
-
-// TIP See CLion help at <a
-// href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
-//  Also, you can try interactive lessons for CLion by selecting
-//  'Help | Learn IDE Features' from the main menu.
