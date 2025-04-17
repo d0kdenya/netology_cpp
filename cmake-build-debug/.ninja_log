@@ -1,3 +1,6 @@
 # ninja log v6
 7	1035	7665384369382556	CMakeFiles/netology_cpp.dir/main.cpp.obj	928f8982046c341a
 1037	1329	7665384379684827	netology_cpp.exe	c3886c0fe3c8fc9f
+10	397	7666223828741573	CMakeFiles/netology_cpp.dir/greeter.cpp.obj	30d3dff2ae58dad7
+2	481	7666223828661499	CMakeFiles/netology_cpp.dir/main.cpp.obj	928f8982046c341a
+481	611	7666223833457252	netology_cpp.exe	e76fc59691fbce70
