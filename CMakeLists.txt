@@ -15,4 +15,16 @@ add_executable(netology_cpp main.cpp
         Quadrangle.cpp
         Quadrangle.h
         Rectangle.cpp
-        Rectangle.h)
+        Rectangle.h
+        Rectangle.cpp
+        Rectangle.h
+        Quadrangle.cpp
+        Quadrangle.h
+        RightTriangle.cpp
+        RightTriangle.h
+        Triangle.cpp
+        Triangle.h
+        Figure.cpp
+        Figure.h
+        FigureError.cpp
+        FigureError.h)
