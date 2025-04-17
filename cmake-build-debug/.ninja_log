@@ -1,15 +1,8 @@
 # ninja log v6
-7	1035	7665384369382556	CMakeFiles/netology_cpp.dir/main.cpp.obj	928f8982046c341a
-1037	1329	7665384379684827	netology_cpp.exe	c3886c0fe3c8fc9f
-24	682	7666014738587812	CMakeFiles/netology_cpp.dir/RightTriangle.cpp.obj	dd47b9d34cdfd9ae
-37	698	7666014738722947	CMakeFiles/netology_cpp.dir/IsoscelesTriangle.cpp.obj	3a7eb24cc00749f
-50	734	7666014738843138	CMakeFiles/netology_cpp.dir/EquilateralTriangle.cpp.obj	3dd500e9df728dec
-80	761	7666014739143616	CMakeFiles/netology_cpp.dir/Parallelogram.cpp.obj	9f0aa84456161dd2
-16	773	7666014738507596	CMakeFiles/netology_cpp.dir/Triangle.cpp.obj	f565a996c047153f
-9	802	7666014738437141	CMakeFiles/netology_cpp.dir/Figure.cpp.obj	e77b85d4de08b006
-96	805	7666014739310381	CMakeFiles/netology_cpp.dir/Rectangle.cpp.obj	c7a06d47092fce99
-116	807	7666014739510720	CMakeFiles/netology_cpp.dir/Rhombus.cpp.obj	c6b38a4b30609f9a
-64	845	7666014738988493	CMakeFiles/netology_cpp.dir/Quadrangle.cpp.obj	25f1c8b2b1f7af2d
 2	900	7666014738367127	CMakeFiles/netology_cpp.dir/main.cpp.obj	928f8982046c341a
-683	1112	7666014745169552	CMakeFiles/netology_cpp.dir/Square.cpp.obj	1f5f0d55fb321675
 1112	1277	7666014749466900	netology_cpp.exe	637a8077abc711e
+24	682	7666014738587812	CMakeFiles/netology_cpp.dir/RightTriangle.cpp.obj	dd47b9d34cdfd9ae
+9	802	7666014738437141	CMakeFiles/netology_cpp.dir/Figure.cpp.obj	e77b85d4de08b006
+16	773	7666014738507596	CMakeFiles/netology_cpp.dir/Triangle.cpp.obj	f565a996c047153f
+96	805	7666014739310381	CMakeFiles/netology_cpp.dir/Rectangle.cpp.obj	c7a06d47092fce99
+64	845	7666014738988493	CMakeFiles/netology_cpp.dir/Quadrangle.cpp.obj	25f1c8b2b1f7af2d

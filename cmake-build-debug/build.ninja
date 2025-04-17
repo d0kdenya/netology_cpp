@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: netology_cpp
+# Project: figures
 # Configurations: Debug
 # =============================================================================
 
@@ -41,97 +41,101 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = D$:/Portfolio/netology_cpp/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target netology_cpp
+# Object build statements for EXECUTABLE target figures
 
 
 #############################################
-# Order-only phony target for netology_cpp
+# Order-only phony target for figures
 
-build cmake_object_order_depends_target_netology_cpp: phony || .
+build cmake_object_order_depends_target_figures: phony || .
 
-build CMakeFiles/netology_cpp.dir/main.cpp.obj: CXX_COMPILER__netology_cpp_unscanned_Debug D$:/Portfolio/netology_cpp/main.cpp || cmake_object_order_depends_target_netology_cpp
-  DEP_FILE = CMakeFiles\netology_cpp.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\netology_cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\netology_cpp.dir
+build CMakeFiles/figures.dir/Figure.cpp.obj: CXX_COMPILER__figures_unscanned_Debug D$:/Portfolio/netology_cpp/Figure.cpp || cmake_object_order_depends_target_figures
+  DEP_FILE = CMakeFiles\figures.dir\Figure.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/Portfolio/netology_cpp/include
+  OBJECT_DIR = CMakeFiles\figures.dir
+  OBJECT_FILE_DIR = CMakeFiles\figures.dir
 
-build CMakeFiles/netology_cpp.dir/Figure.cpp.obj: CXX_COMPILER__netology_cpp_unscanned_Debug D$:/Portfolio/netology_cpp/Figure.cpp || cmake_object_order_depends_target_netology_cpp
-  DEP_FILE = CMakeFiles\netology_cpp.dir\Figure.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\netology_cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\netology_cpp.dir
+build CMakeFiles/figures.dir/Triangle.cpp.obj: CXX_COMPILER__figures_unscanned_Debug D$:/Portfolio/netology_cpp/Triangle.cpp || cmake_object_order_depends_target_figures
+  DEP_FILE = CMakeFiles\figures.dir\Triangle.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/Portfolio/netology_cpp/include
+  OBJECT_DIR = CMakeFiles\figures.dir
+  OBJECT_FILE_DIR = CMakeFiles\figures.dir
 
-build CMakeFiles/netology_cpp.dir/Triangle.cpp.obj: CXX_COMPILER__netology_cpp_unscanned_Debug D$:/Portfolio/netology_cpp/Triangle.cpp || cmake_object_order_depends_target_netology_cpp
-  DEP_FILE = CMakeFiles\netology_cpp.dir\Triangle.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\netology_cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\netology_cpp.dir
+build CMakeFiles/figures.dir/RightTriangle.cpp.obj: CXX_COMPILER__figures_unscanned_Debug D$:/Portfolio/netology_cpp/RightTriangle.cpp || cmake_object_order_depends_target_figures
+  DEP_FILE = CMakeFiles\figures.dir\RightTriangle.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/Portfolio/netology_cpp/include
+  OBJECT_DIR = CMakeFiles\figures.dir
+  OBJECT_FILE_DIR = CMakeFiles\figures.dir
 
-build CMakeFiles/netology_cpp.dir/RightTriangle.cpp.obj: CXX_COMPILER__netology_cpp_unscanned_Debug D$:/Portfolio/netology_cpp/RightTriangle.cpp || cmake_object_order_depends_target_netology_cpp
-  DEP_FILE = CMakeFiles\netology_cpp.dir\RightTriangle.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\netology_cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\netology_cpp.dir
+build CMakeFiles/figures.dir/IsoscelesTriangle.cpp.obj: CXX_COMPILER__figures_unscanned_Debug D$:/Portfolio/netology_cpp/IsoscelesTriangle.cpp || cmake_object_order_depends_target_figures
+  DEP_FILE = CMakeFiles\figures.dir\IsoscelesTriangle.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/Portfolio/netology_cpp/include
+  OBJECT_DIR = CMakeFiles\figures.dir
+  OBJECT_FILE_DIR = CMakeFiles\figures.dir
 
-build CMakeFiles/netology_cpp.dir/IsoscelesTriangle.cpp.obj: CXX_COMPILER__netology_cpp_unscanned_Debug D$:/Portfolio/netology_cpp/IsoscelesTriangle.cpp || cmake_object_order_depends_target_netology_cpp
-  DEP_FILE = CMakeFiles\netology_cpp.dir\IsoscelesTriangle.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\netology_cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\netology_cpp.dir
+build CMakeFiles/figures.dir/EquilateralTriangle.cpp.obj: CXX_COMPILER__figures_unscanned_Debug D$:/Portfolio/netology_cpp/EquilateralTriangle.cpp || cmake_object_order_depends_target_figures
+  DEP_FILE = CMakeFiles\figures.dir\EquilateralTriangle.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/Portfolio/netology_cpp/include
+  OBJECT_DIR = CMakeFiles\figures.dir
+  OBJECT_FILE_DIR = CMakeFiles\figures.dir
 
-build CMakeFiles/netology_cpp.dir/EquilateralTriangle.cpp.obj: CXX_COMPILER__netology_cpp_unscanned_Debug D$:/Portfolio/netology_cpp/EquilateralTriangle.cpp || cmake_object_order_depends_target_netology_cpp
-  DEP_FILE = CMakeFiles\netology_cpp.dir\EquilateralTriangle.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\netology_cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\netology_cpp.dir
+build CMakeFiles/figures.dir/Quadrangle.cpp.obj: CXX_COMPILER__figures_unscanned_Debug D$:/Portfolio/netology_cpp/Quadrangle.cpp || cmake_object_order_depends_target_figures
+  DEP_FILE = CMakeFiles\figures.dir\Quadrangle.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/Portfolio/netology_cpp/include
+  OBJECT_DIR = CMakeFiles\figures.dir
+  OBJECT_FILE_DIR = CMakeFiles\figures.dir
 
-build CMakeFiles/netology_cpp.dir/Quadrangle.cpp.obj: CXX_COMPILER__netology_cpp_unscanned_Debug D$:/Portfolio/netology_cpp/Quadrangle.cpp || cmake_object_order_depends_target_netology_cpp
-  DEP_FILE = CMakeFiles\netology_cpp.dir\Quadrangle.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\netology_cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\netology_cpp.dir
+build CMakeFiles/figures.dir/Parallelogram.cpp.obj: CXX_COMPILER__figures_unscanned_Debug D$:/Portfolio/netology_cpp/Parallelogram.cpp || cmake_object_order_depends_target_figures
+  DEP_FILE = CMakeFiles\figures.dir\Parallelogram.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/Portfolio/netology_cpp/include
+  OBJECT_DIR = CMakeFiles\figures.dir
+  OBJECT_FILE_DIR = CMakeFiles\figures.dir
 
-build CMakeFiles/netology_cpp.dir/Parallelogram.cpp.obj: CXX_COMPILER__netology_cpp_unscanned_Debug D$:/Portfolio/netology_cpp/Parallelogram.cpp || cmake_object_order_depends_target_netology_cpp
-  DEP_FILE = CMakeFiles\netology_cpp.dir\Parallelogram.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\netology_cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\netology_cpp.dir
+build CMakeFiles/figures.dir/Rectangle.cpp.obj: CXX_COMPILER__figures_unscanned_Debug D$:/Portfolio/netology_cpp/Rectangle.cpp || cmake_object_order_depends_target_figures
+  DEP_FILE = CMakeFiles\figures.dir\Rectangle.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/Portfolio/netology_cpp/include
+  OBJECT_DIR = CMakeFiles\figures.dir
+  OBJECT_FILE_DIR = CMakeFiles\figures.dir
 
-build CMakeFiles/netology_cpp.dir/Rectangle.cpp.obj: CXX_COMPILER__netology_cpp_unscanned_Debug D$:/Portfolio/netology_cpp/Rectangle.cpp || cmake_object_order_depends_target_netology_cpp
-  DEP_FILE = CMakeFiles\netology_cpp.dir\Rectangle.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\netology_cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\netology_cpp.dir
+build CMakeFiles/figures.dir/Rhombus.cpp.obj: CXX_COMPILER__figures_unscanned_Debug D$:/Portfolio/netology_cpp/Rhombus.cpp || cmake_object_order_depends_target_figures
+  DEP_FILE = CMakeFiles\figures.dir\Rhombus.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/Portfolio/netology_cpp/include
+  OBJECT_DIR = CMakeFiles\figures.dir
+  OBJECT_FILE_DIR = CMakeFiles\figures.dir
 
-build CMakeFiles/netology_cpp.dir/Rhombus.cpp.obj: CXX_COMPILER__netology_cpp_unscanned_Debug D$:/Portfolio/netology_cpp/Rhombus.cpp || cmake_object_order_depends_target_netology_cpp
-  DEP_FILE = CMakeFiles\netology_cpp.dir\Rhombus.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\netology_cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\netology_cpp.dir
-
-build CMakeFiles/netology_cpp.dir/Square.cpp.obj: CXX_COMPILER__netology_cpp_unscanned_Debug D$:/Portfolio/netology_cpp/Square.cpp || cmake_object_order_depends_target_netology_cpp
-  DEP_FILE = CMakeFiles\netology_cpp.dir\Square.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\netology_cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\netology_cpp.dir
+build CMakeFiles/figures.dir/Square.cpp.obj: CXX_COMPILER__figures_unscanned_Debug D$:/Portfolio/netology_cpp/Square.cpp || cmake_object_order_depends_target_figures
+  DEP_FILE = CMakeFiles\figures.dir\Square.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/Portfolio/netology_cpp/include
+  OBJECT_DIR = CMakeFiles\figures.dir
+  OBJECT_FILE_DIR = CMakeFiles\figures.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target netology_cpp
+# Link build statements for EXECUTABLE target figures
 
 
 #############################################
-# Link the executable netology_cpp.exe
+# Link the executable figures.exe
 
-build netology_cpp.exe: CXX_EXECUTABLE_LINKER__netology_cpp_Debug CMakeFiles/netology_cpp.dir/main.cpp.obj CMakeFiles/netology_cpp.dir/Figure.cpp.obj CMakeFiles/netology_cpp.dir/Triangle.cpp.obj CMakeFiles/netology_cpp.dir/RightTriangle.cpp.obj CMakeFiles/netology_cpp.dir/IsoscelesTriangle.cpp.obj CMakeFiles/netology_cpp.dir/EquilateralTriangle.cpp.obj CMakeFiles/netology_cpp.dir/Quadrangle.cpp.obj CMakeFiles/netology_cpp.dir/Parallelogram.cpp.obj CMakeFiles/netology_cpp.dir/Rectangle.cpp.obj CMakeFiles/netology_cpp.dir/Rhombus.cpp.obj CMakeFiles/netology_cpp.dir/Square.cpp.obj
+build figures.exe: CXX_EXECUTABLE_LINKER__figures_Debug CMakeFiles/figures.dir/Figure.cpp.obj CMakeFiles/figures.dir/Triangle.cpp.obj CMakeFiles/figures.dir/RightTriangle.cpp.obj CMakeFiles/figures.dir/IsoscelesTriangle.cpp.obj CMakeFiles/figures.dir/EquilateralTriangle.cpp.obj CMakeFiles/figures.dir/Quadrangle.cpp.obj CMakeFiles/figures.dir/Parallelogram.cpp.obj CMakeFiles/figures.dir/Rectangle.cpp.obj CMakeFiles/figures.dir/Rhombus.cpp.obj CMakeFiles/figures.dir/Square.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\netology_cpp.dir
+  OBJECT_DIR = CMakeFiles\figures.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = netology_cpp.exe
-  TARGET_IMPLIB = libnetology_cpp.dll.a
-  TARGET_PDB = netology_cpp.exe.dbg
+  TARGET_FILE = figures.exe
+  TARGET_IMPLIB = libfigures.dll.a
+  TARGET_PDB = figures.exe.dbg
 
 
 #############################################
@@ -159,7 +163,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build netology_cpp: phony netology_cpp.exe
+build figures: phony figures.exe
 
 # =============================================================================
 # Folder targets.
@@ -169,7 +173,7 @@ build netology_cpp: phony netology_cpp.exe
 #############################################
 # Folder: D:/Portfolio/netology_cpp/cmake-build-debug
 
-build all: phony netology_cpp.exe
+build all: phony figures.exe
 
 # =============================================================================
 # Built-in targets
@@ -178,14 +182,14 @@ build all: phony netology_cpp.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake D$:/Portfolio/netology_cpp/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake D$:/Portfolio/netology_cpp/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake D$:/Portfolio/netology_cpp/CMakeLists.txt: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.3.1.1/bin/cmake/win/x64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeRCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake D$:/Portfolio/netology_cpp/CMakeLists.txt: phony
 
 
 #############################################

@@ -1,9 +1,14 @@
-cmake_minimum_required(VERSION 3.30)
-project(netology_cpp)
+cmake_minimum_required(VERSION 3.15)
+project(figures LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(netology_cpp main.cpp
+# Папка с заголовками
+include_directories(${CMAKE_SOURCE_DIR}/include)
+
+# Список исходников (можно glob, но явный список надёжнее)
+add_executable(figures
         Figure.cpp
         Figure.h
         Triangle.cpp
