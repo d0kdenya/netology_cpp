@@ -1,25 +1,42 @@
 #include <iostream>
+#include <limits>
+#include <string>
 
-// TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-int main() {
-    // TIP Press <shortcut actionId="RenameElement"/> when your caret is at the
-    // <b>lang</b> variable name to see how CLion can help you rename it.
-    auto lang = "C++";
-    std::cout << "Hello and welcome to " << lang << "!\n";
+struct bad_length { };
 
-    for (int i = 1; i <= 5; i++) {
-        // TIP Press <shortcut actionId="Debug"/> to start debugging your code.
-        // We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/>
-        // breakpoint for you, but you can always add more by pressing
-        // <shortcut actionId="ToggleLineBreakpoint"/>.
-        std::cout << "i = " << i << std::endl;
-    }
-
-    return 0;
+int get_length_or_throw(const std::string& str, int forbidden_length)
+{
+    int len = static_cast<int>(str.length());
+    if (len == forbidden_length)
+        throw bad_length{};
+    return len;
 }
 
-// TIP See CLion help at <a
-// href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
-//  Also, you can try interactive lessons for CLion by selecting
-//  'Help | Learn IDE Features' from the main menu.
+int main()
+{
+    system("chcp 65001 > nul");
+
+    int forbidden{};
+    std::cout << "Введите запретную длину: ";
+    std::cin  >> forbidden;
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+    while (true)
+    {
+        std::string word;
+        std::cout << "Введите слово: ";
+        std::getline(std::cin, word);
+
+        try
+        {
+            int len = get_length_or_throw(word, forbidden);
+            std::cout << "Длина слова \"" << word << "\" равна " << len << '\n';
+        }
+        catch (const bad_length&)
+        {
+            std::cout << "Вы ввели слово запретной длины! До свидания\n";
+            break;
+        }
+    }
+    return 0;
+}
