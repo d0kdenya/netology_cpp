@@ -1,25 +1,46 @@
 #include <iostream>
+#include <limits>
+#include <cstdlib>
+#include "math_functions.h"
 
-// TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 int main() {
-    // TIP Press <shortcut actionId="RenameElement"/> when your caret is at the
-    // <b>lang</b> variable name to see how CLion can help you rename it.
-    auto lang = "C++";
-    std::cout << "Hello and welcome to " << lang << "!\n";
+    system("chcp 65001 > nul");
 
-    for (int i = 1; i <= 5; i++) {
-        // TIP Press <shortcut actionId="Debug"/> to start debugging your code.
-        // We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/>
-        // breakpoint for you, but you can always add more by pressing
-        // <shortcut actionId="ToggleLineBreakpoint"/>.
-        std::cout << "i = " << i << std::endl;
+    double a, b;
+    int op;
+
+    std::cout << "Введите первое число: ";
+    std::cin  >> a;
+    std::cout << "Введите второе число: ";
+    std::cin  >> b;
+
+    std::cout << "Выберите операцию\n"
+              << "(1 - сложение, 2 - вычитание, 3 - умножение,\n"
+              << " 4 - деление, 5 - возведение в степень): ";
+    std::cin >> op;
+
+    try {
+        double result{};
+        switch (op) {
+            case 1:  result = add(a, b);                    break;
+            case 2:  result = sub(a, b);                    break;
+            case 3:  result = mul(a, b);                    break;
+            case 4:  result = divide(a, b);                 break;
+            case 5:  result = power(a, b);                  break;
+            default:
+                std::cout << "Неизвестная операция!\n";
+            return 0;
+        }
+
+        const char* msg[] = { "", " + ", " - ", " * ", " / ", " в степени " };
+        if (op == 5)
+            std::cout << a << msg[op] << b << " = " << result << '\n';
+        else
+            std::cout << a << msg[op] << b << " = " << result << '\n';
+    }
+    catch (const std::exception& e) {
+        std::cerr << "Ошибка: " << e.what() << '\n';
     }
 
     return 0;
 }
-
-// TIP See CLion help at <a
-// href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
-//  Also, you can try interactive lessons for CLion by selecting
-//  'Help | Learn IDE Features' from the main menu.
