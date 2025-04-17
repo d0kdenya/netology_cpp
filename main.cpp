@@ -1,25 +1,78 @@
 #include <iostream>
+#include <fstream>
+#include <string>
+#include <limits>
 
-// TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-int main() {
-    // TIP Press <shortcut actionId="RenameElement"/> when your caret is at the
-    // <b>lang</b> variable name to see how CLion can help you rename it.
-    auto lang = "C++";
-    std::cout << "Hello and welcome to " << lang << "!\n";
+class Address {
+private:
+    std::string city;
+    std::string street;
+    int house;
+    int apartment;
 
-    for (int i = 1; i <= 5; i++) {
-        // TIP Press <shortcut actionId="Debug"/> to start debugging your code.
-        // We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/>
-        // breakpoint for you, but you can always add more by pressing
-        // <shortcut actionId="ToggleLineBreakpoint"/>.
-        std::cout << "i = " << i << std::endl;
+public:
+    Address(const std::string& city_,
+            const std::string& street_,
+            int house_,
+            int apartment_)
+        : city(city_), street(street_),
+          house(house_), apartment(apartment_)
+    {}
+
+    std::string get_output_address() const {
+        return city + ", " +
+               street + ", " +
+               std::to_string(house) + ", " +
+               std::to_string(apartment);
     }
+};
+
+int main() {
+    system("chcp 65001 > nul");
+
+    std::ifstream in("../in.txt");
+    if (!in) {
+        std::cerr << "Не удалось открыть файл in.txt для чтения\n";
+        return 1;
+    }
+
+    int N;
+    in >> N;
+    in.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+    Address** arr = new Address*[N];
+
+    for (int i = 0; i < N; ++i) {
+        std::string city, street;
+        int house, apartment;
+
+        std::getline(in, city);
+        std::getline(in, street);
+        in >> house >> apartment;
+        in.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+        arr[i] = new Address(city, street, house, apartment);
+    }
+    in.close();
+
+    std::ofstream out("../out.txt");
+    if (!out) {
+        std::cerr << "Не удалось открыть файл out.txt для записи\n";
+        for (int i = 0; i < N; ++i) delete arr[i];
+        delete[] arr;
+        return 1;
+    }
+
+    out << N << "\n";
+    for (int i = N - 1; i >= 0; --i) {
+        out << arr[i]->get_output_address() << "\n";
+    }
+    out.close();
+
+    for (int i = 0; i < N; ++i) {
+        delete arr[i];
+    }
+    delete[] arr;
 
     return 0;
 }
-
-// TIP See CLion help at <a
-// href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
-//  Also, you can try interactive lessons for CLion by selecting
-//  'Help | Learn IDE Features' from the main menu.
