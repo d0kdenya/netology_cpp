@@ -1,25 +1,65 @@
 #include <iostream>
+#include <numeric>
+#include <stdexcept>
+#include <cstdlib>
 
-// TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-int main() {
-    // TIP Press <shortcut actionId="RenameElement"/> when your caret is at the
-    // <b>lang</b> variable name to see how CLion can help you rename it.
-    auto lang = "C++";
-    std::cout << "Hello and welcome to " << lang << "!\n";
+class Fraction
+{
+private:
+    int numerator_;
+    int denominator_;
 
-    for (int i = 1; i <= 5; i++) {
-        // TIP Press <shortcut actionId="Debug"/> to start debugging your code.
-        // We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/>
-        // breakpoint for you, but you can always add more by pressing
-        // <shortcut actionId="ToggleLineBreakpoint"/>.
-        std::cout << "i = " << i << std::endl;
+    void normalize()
+    {
+        if (denominator_ == 0)
+            throw std::invalid_argument("Denominator must not be 0");
+
+        if (denominator_ < 0) {
+            numerator_   = -numerator_;
+            denominator_ = -denominator_;
+        }
+
+        int g = std::gcd(numerator_, denominator_);
+        numerator_   /= g;
+        denominator_ /= g;
     }
 
+public:
+    Fraction(int num, int den) : numerator_(num), denominator_(den)
+    {
+        normalize();
+    }
+
+    friend bool operator==(const Fraction& lhs, const Fraction& rhs)
+    {
+        return static_cast<long long>(lhs.numerator_)   * rhs.denominator_ ==
+               static_cast<long long>(rhs.numerator_)   * lhs.denominator_;
+    }
+    friend bool operator<(const Fraction& lhs, const Fraction& rhs)
+    {
+        return static_cast<long long>(lhs.numerator_)   * rhs.denominator_ <
+               static_cast<long long>(rhs.numerator_)   * lhs.denominator_;
+    }
+
+    friend bool operator!=(const Fraction& lhs, const Fraction& rhs) { return !(lhs == rhs); }
+    friend bool operator> (const Fraction& lhs, const Fraction& rhs) { return   rhs < lhs; }
+    friend bool operator<=(const Fraction& lhs, const Fraction& rhs) { return !(rhs < lhs); }
+    friend bool operator>=(const Fraction& lhs, const Fraction& rhs) { return !(lhs < rhs); }
+};
+
+
+int main()
+{
+    system("chcp 65001 > nul");
+
+    Fraction f1(4, 3);
+    Fraction f2(6, 11);
+
+    std::cout << "f1" << ((f1 == f2) ? " == " : " not == ") << "f2" << '\n';
+    std::cout << "f1" << ((f1 != f2) ? " != " : " not != ") << "f2" << '\n';
+    std::cout << "f1" << ((f1 <  f2) ? " < "  : " not < ")  << "f2" << '\n';
+    std::cout << "f1" << ((f1 >  f2) ? " > "  : " not > ")  << "f2" << '\n';
+    std::cout << "f1" << ((f1 <= f2) ? " <= " : " not <= ") << "f2" << '\n';
+    std::cout << "f1" << ((f1 >= f2) ? " >= " : " not >= ") << "f2" << '\n';
     return 0;
 }
-
-// TIP See CLion help at <a
-// href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
-//  Also, you can try interactive lessons for CLion by selecting
-//  'Help | Learn IDE Features' from the main menu.
