@@ -1,6 +1,10 @@
-cmake_minimum_required(VERSION 3.30)
-project(netology_cpp)
+cmake_minimum_required(VERSION 3.16)
+project(race_simulator LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(netology_cpp main.cpp)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+add_subdirectory(racecore)
+add_subdirectory(app)

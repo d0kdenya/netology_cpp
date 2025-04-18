@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/Portfolio/netology_cpp/build/cmake_install.cmake",
+		"D:/Portfolio/netology_cpp/build/racecore/cmake_install.cmake",
+		"D:/Portfolio/netology_cpp/build/app/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

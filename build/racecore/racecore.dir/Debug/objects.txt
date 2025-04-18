@@ -1,0 +1,9 @@
+D:/Portfolio/netology_cpp/build/racecore/racecore.dir/Debug/Race.obj
+D:/Portfolio/netology_cpp/build/racecore/racecore.dir/Debug/factory.obj
+D:/Portfolio/netology_cpp/build/racecore/racecore.dir/Debug/Boots.obj
+D:/Portfolio/netology_cpp/build/racecore/racecore.dir/Debug/Broom.obj
+D:/Portfolio/netology_cpp/build/racecore/racecore.dir/Debug/Camel.obj
+D:/Portfolio/netology_cpp/build/racecore/racecore.dir/Debug/Carpet.obj
+D:/Portfolio/netology_cpp/build/racecore/racecore.dir/Debug/Centaur.obj
+D:/Portfolio/netology_cpp/build/racecore/racecore.dir/Debug/Eagle.obj
+D:/Portfolio/netology_cpp/build/racecore/racecore.dir/Debug/FastCamel.obj

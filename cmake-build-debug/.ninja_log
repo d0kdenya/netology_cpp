@@ -1,3 +1,16 @@
 # ninja log v6
 7	1035	7665384369382556	CMakeFiles/netology_cpp.dir/main.cpp.obj	928f8982046c341a
+88	708	7666835192658456	racecore/CMakeFiles/racecore.dir/src/transport/FastCamel.cpp.obj	2234ce8ebaad4ae9
 1037	1329	7665384379684827	netology_cpp.exe	c3886c0fe3c8fc9f
+64	676	7666835192417778	racecore/CMakeFiles/racecore.dir/src/transport/Centaur.cpp.obj	a8b5d9b67e74bbb4
+36	682	7666835192122149	racecore/CMakeFiles/racecore.dir/src/transport/Camel.cpp.obj	5bfcabcd230e008f
+77	690	7666835192547941	racecore/CMakeFiles/racecore.dir/src/transport/Eagle.cpp.obj	eb90560ef4044ca1
+17	698	7666835191939970	racecore/CMakeFiles/racecore.dir/src/transport/Boots.cpp.obj	6fb620cc16f24a71
+24	707	7666835192020050	racecore/CMakeFiles/racecore.dir/src/transport/Broom.cpp.obj	2579752437b2e9f6
+53	714	7666835192297465	racecore/CMakeFiles/racecore.dir/src/transport/Carpet.cpp.obj	45f0175acdc94fda
+3	863	7666835191799779	racecore/CMakeFiles/racecore.dir/src/Race.cpp.obj	dd26fd14f42d573c
+103	960	7666835192801788	app/CMakeFiles/race_cli.dir/main.cpp.obj	dff2d7667169afb9
+10	974	7666835191874880	racecore/CMakeFiles/racecore.dir/src/factory.cpp.obj	f51c8b8769d059df
+974	1471	7666835206321357	racecore/libracecore.dll	2466f48160f7673c
+974	1471	7666835206321357	racecore/libracecore.dll.a	2466f48160f7673c
+1471	1669	7666835206488668	app/race_cli.exe	f4c0a1a4e93bd479

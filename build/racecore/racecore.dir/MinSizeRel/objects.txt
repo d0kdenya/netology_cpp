@@ -1,0 +1,9 @@
+D:/Portfolio/netology_cpp/build/racecore/racecore.dir/MinSizeRel/Race.obj
+D:/Portfolio/netology_cpp/build/racecore/racecore.dir/MinSizeRel/factory.obj
+D:/Portfolio/netology_cpp/build/racecore/racecore.dir/MinSizeRel/Boots.obj
+D:/Portfolio/netology_cpp/build/racecore/racecore.dir/MinSizeRel/Broom.obj
+D:/Portfolio/netology_cpp/build/racecore/racecore.dir/MinSizeRel/Camel.obj
+D:/Portfolio/netology_cpp/build/racecore/racecore.dir/MinSizeRel/Carpet.obj
+D:/Portfolio/netology_cpp/build/racecore/racecore.dir/MinSizeRel/Centaur.obj
+D:/Portfolio/netology_cpp/build/racecore/racecore.dir/MinSizeRel/Eagle.obj
+D:/Portfolio/netology_cpp/build/racecore/racecore.dir/MinSizeRel/FastCamel.obj

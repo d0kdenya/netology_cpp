@@ -1,3 +1,8 @@
-D:/Portfolio/netology_cpp/cmake-build-debug/CMakeFiles/netology_cpp.dir
 D:/Portfolio/netology_cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/Portfolio/netology_cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Portfolio/netology_cpp/cmake-build-debug/racecore/CMakeFiles/racecore.dir
+D:/Portfolio/netology_cpp/cmake-build-debug/racecore/CMakeFiles/edit_cache.dir
+D:/Portfolio/netology_cpp/cmake-build-debug/racecore/CMakeFiles/rebuild_cache.dir
+D:/Portfolio/netology_cpp/cmake-build-debug/app/CMakeFiles/race_cli.dir
+D:/Portfolio/netology_cpp/cmake-build-debug/app/CMakeFiles/edit_cache.dir
+D:/Portfolio/netology_cpp/cmake-build-debug/app/CMakeFiles/rebuild_cache.dir
